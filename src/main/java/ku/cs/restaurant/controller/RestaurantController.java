@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.UUID;
+
 /**
  * @author 6510405377 Jitlada Yotinta
  */
@@ -27,7 +28,7 @@ public class RestaurantController {
     }
 
     @GetMapping("/restaurant/{id}")
-    public Restaurant getRestaurantById(@PathVariable UUID id){
+    public Restaurant getRestaurantById(@PathVariable UUID id) {
         return service.getRestaurantById(id);
     }
 
@@ -42,11 +43,12 @@ public class RestaurantController {
     }
 
     @GetMapping("/restaurant/name/{name}")
-    public Restaurant getRestaurantByName(@PathVariable String name){
+    public Restaurant getRestaurantByName(@PathVariable String name) {
         return service.getRestaurantByName(name);
     }
+
     @GetMapping("/restaurant/location/{location}")
-    public List<Restaurant>getRestaurantByLocation(@PathVariable String location){
+    public List<Restaurant> getRestaurantByLocation(@PathVariable String location) {
         return service.getRestaurantByLocation(location);
     }
 

@@ -2,6 +2,7 @@ package ku.cs.restaurant;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 /**
  * @author 6510405377 Jitlada Yotinta
  */
